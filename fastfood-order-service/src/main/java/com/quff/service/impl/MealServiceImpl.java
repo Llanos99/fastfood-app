@@ -7,6 +7,8 @@ import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 import org.bson.types.ObjectId;
 
+import java.util.List;
+
 @ApplicationScoped
 public class MealServiceImpl implements MealService {
 
@@ -33,5 +35,10 @@ public class MealServiceImpl implements MealService {
             return true;
         }
         return false;
+    }
+
+    @Override
+    public List<Meal> listMeals() {
+        return mealRepository.findAll().stream().toList();
     }
 }

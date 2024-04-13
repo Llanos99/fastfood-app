@@ -38,4 +38,11 @@ public class MealController {
         return Response.noContent().build();
     }
 
+    @GET
+    @Path("/list")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listMeals() {
+        return Response.ok(mealService.listMeals()).build();
+    }
+
 }
