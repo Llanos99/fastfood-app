@@ -12,6 +12,8 @@
         <module>fastfood-notification-service</module>
         <module>fastfood-order-service</module>
         <module>fastfood-payment-service</module>
+        <module>fastfood-employ-service</module>
+        <module>fastfood-preparation-service</module>
     </modules>
 
     <properties>
@@ -46,6 +48,14 @@
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-rest</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-config-yaml</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-mongodb-panache</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
