@@ -22,6 +22,7 @@ RUN chown 1001 /work \
 COPY --chown=1001:root target/*-runner /work/application
 
 EXPOSE 8080
+ENV MONGODB_URL="mongodb://host.docker.internal:27017/fastfoodDB"
 USER 1001
 
 ENTRYPOINT ["./application", "-Dquarkus.http.host=0.0.0.0"]
