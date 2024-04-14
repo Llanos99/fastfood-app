@@ -7,7 +7,7 @@ import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-@Path("/meal")
+@Path("/api/v1/meal")
 public class MealController {
 
     private final MealService mealService;
@@ -42,7 +42,7 @@ public class MealController {
     @Path("/list")
     @Produces(MediaType.APPLICATION_JSON)
     public Response listMeals() {
-        return Response.ok(mealService.listMeals()).build();
+        return Response.ok(mealService.displayMenu()).build();
     }
 
 }

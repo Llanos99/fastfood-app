@@ -16,4 +16,6 @@ public class Meal {
 
     private String type;
 
+    private float price;
+
 }

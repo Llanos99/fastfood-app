@@ -10,6 +10,6 @@ public interface MealService {
 
     boolean deleteMealFromMenu(String id);
 
-    List<Meal> listMeals();
+    List<Meal> displayMenu();
 
 }

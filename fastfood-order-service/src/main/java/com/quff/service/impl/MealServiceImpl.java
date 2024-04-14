@@ -38,7 +38,7 @@ public class MealServiceImpl implements MealService {
     }
 
     @Override
-    public List<Meal> listMeals() {
+    public List<Meal> displayMenu() {
         return mealRepository.findAll().stream().toList();
     }
 }
